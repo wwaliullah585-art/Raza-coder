@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Classes - Data Science Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>Data Science Academy</span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="classes.html" class="active">Online Classes</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="resume.html">Resume Builder</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="https://wwaliullah585-art.github.io/learn-data-science-with-me/index.html#home">Webiste</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1 class="fade-in">Online Classes</h1>
+        <p class="fade-in">Enroll in our expert-led courses and transform your career</p>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section style="text-align: center; padding: 2rem;">
+        <button class="btn btn-primary filter-btn active-filter" onclick="filterCourses('all')">All Courses</button>
+        <button class="btn btn-secondary filter-btn" onclick="filterCourses('beginner')">Beginner</button>
+        <button class="btn btn-secondary filter-btn" onclick="filterCourses('intermediate')">Intermediate</button>
+        <button class="btn btn-secondary filter-btn" onclick="filterCourses('advanced')">Advanced</button>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="cards-section">
+        <div class="cards-grid" id="coursesGrid">
+            <div class="card slide-up" data-level="beginner">
+                <div class="card-icon">🐍</div>
+                <h3>Python for Beginners</h3>
+                <p>Start your programming journey with Python. Learn variables, loops, functions, and object-oriented programming.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Beginner</span>
+                    <span class="card-tag">8 Weeks</span>
+                    <span class="card-tag">Live</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 5,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="intermediate">
+                <div class="card-icon">📊</div>
+                <h3>Data Science with Python</h3>
+                <p>Master NumPy, Pandas, Matplotlib, and Seaborn. Learn data cleaning, analysis, and visualization techniques.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Intermediate</span>
+                    <span class="card-tag">12 Weeks</span>
+                    <span class="card-tag">Live</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 8,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="advanced">
+                <div class="card-icon">🤖</div>
+                <h3>Machine Learning</h3>
+                <p>Deep dive into ML algorithms, neural networks, and model deployment. Build real-world AI applications.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Advanced</span>
+                    <span class="card-tag">16 Weeks</span>
+                    <span class="card-tag">Live + Recorded</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 12,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="beginner">
+                <div class="card-icon">🌐</div>
+                <h3>Web Development Bootcamp</h3>
+                <p>Learn HTML, CSS, JavaScript, React, and Node.js. Build full-stack web applications from scratch.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Beginner</span>
+                    <span class="card-tag">14 Weeks</span>
+                    <span class="card-tag">Live</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 10,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="intermediate">
+                <div class="card-icon">🗃️</div>
+                <h3>SQL & Database Management</h3>
+                <p>Master SQL queries, database design, optimization, and work with MySQL, PostgreSQL, and MongoDB.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Intermediate</span>
+                    <span class="card-tag">6 Weeks</span>
+                    <span class="card-tag">Live</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 4,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="advanced">
+                <div class="card-icon">☁️</div>
+                <h3>Cloud Computing & DevOps</h3>
+                <p>Learn AWS, Docker, Kubernetes, CI/CD pipelines, and modern cloud architecture patterns.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Advanced</span>
+                    <span class="card-tag">10 Weeks</span>
+                    <span class="card-tag">Live + Projects</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 15,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="beginner">
+                <div class="card-icon">📱</div>
+                <h3>Mobile App Development</h3>
+                <p>Build cross-platform mobile apps with React Native. Deploy to both iOS and Android from a single codebase.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Beginner</span>
+                    <span class="card-tag">10 Weeks</span>
+                    <span class="card-tag">Live</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 8,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="advanced">
+                <div class="card-icon">🧠</div>
+                <h3>Deep Learning & NLP</h3>
+                <p>Master TensorFlow, PyTorch, transformers, and natural language processing for cutting-edge AI projects.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Advanced</span>
+                    <span class="card-tag">12 Weeks</span>
+                    <span class="card-tag">Live + Research</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 18,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+            
+            <div class="card slide-up" data-level="intermediate">
+                <div class="card-icon">🔒</div>
+                <h3>Cyber Security Fundamentals</h3>
+                <p>Learn ethical hacking, network security, cryptography, and penetration testing techniques.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="card-tag">Intermediate</span>
+                    <span class="card-tag">8 Weeks</span>
+                    <span class="card-tag">Live + Labs</span>
+                </div>
+                <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem;">Rs. 10,000</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-brain"></i> Data Science Academy</h3>
+                <p>Empowering students with cutting-edge technology education.</p>
+                <p><i class="fas fa-map-marker-alt"></i> KPK, Bannu, Pakistan</p>
+                <p><i class="fas fa-envelope"></i> wwaliullah585@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="languages.html">Programming Languages</a>
+                <a href="classes.html">Online Classes</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="resume.html">Resume Builder</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                   <a href="https://www.facebook.com/profile.php?id=61578725471951"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCBvmkQCJ4PxhuNpyh6xVwDQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Data Science Academy. All rights reserved. | CEO: Raza Wazir</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function filterCourses(level) {
+            const cards = document.querySelectorAll('.card[data-level]');
+            cards.forEach(card => {
+                if (level === 'all' || card.dataset.level === level) {
+                    card.style.display = 'block';
+                    card.style.animation = 'slideUp 0.5s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Update active filter button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = 'btn btn-secondary filter-btn';
+            });
+            event.target.className = 'btn btn-primary filter-btn active-filter';
+        }
+    </script>
+</body>
+</html>

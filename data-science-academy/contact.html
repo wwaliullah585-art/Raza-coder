@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Data Science Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>Data Science Academy</span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="classes.html">Online Classes</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="resume.html">Resume Builder</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                 <li><a href="https://wwaliullah585-art.github.io/learn-data-science-with-me/index.html#home">Webiste</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1 class="fade-in">Contact Us</h1>
+        <p class="fade-in">Get in touch with us. We'd love to hear from you!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="slide-left">
+                <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 2rem;">Get In Touch</h3>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p style="color: var(--text-secondary);">wwaliullah585@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p style="color: var(--text-secondary);">KPK, Bannu, Pakistan</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Working Hours</h4>
+                        <p style="color: var(--text-secondary);">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h4>CEO</h4>
+                        <p style="color: var(--text-secondary);">Raza Wazir</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Follow Us</h4>
+                    <div class="social-links">
+                       <a href="https://www.facebook.com/profile.php?id=61578725471951"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCBvmkQCJ4PxhuNpyh6xVwDQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbC3ogw1yT24BsVknL2y"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form slide-right">
+                <h3>Send Us a Message</h3>
+                
+                <div id="formAlert" class="alert"></div>
+                
+                <form id="contactForm">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                    <input type="hidden" name="to_email" value="wwaliullah585@gmail.com">
+                    <input type="hidden" name="subject" value="New Contact Form Submission - Data Science Academy">
+                    
+                    <div class="form-group">
+                        <label>Your Name *</label>
+                        <input type="text" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Email *</label>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" name="subject" placeholder="What is this about?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Message *</label>
+                        <textarea name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem; text-align: center;">
+                    Your message will be sent directly to our email. We typically respond within 24 hours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding: 0 2rem 80px; max-width: 1200px; margin: 0 auto;">
+        <div style="background: var(--bg-card); border: 1px solid rgba(0,245,255,0.1); border-radius: var(--border-radius); overflow: hidden; height: 300px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104937.95438652988!2d70.5275536!3d32.9859438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e78a4a2c5e4e5d%3A0x3c6b3e2f0e5e4e5d!2sBannu%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890"
+                width="100%" 
+                height="300" 
+                style="border:0; filter: invert(90%) hue-rotate(180deg);" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-brain"></i> Data Science Academy</h3>
+                <p>Empowering students with cutting-edge technology education.</p>
+                <p><i class="fas fa-map-marker-alt"></i> KPK, Bannu, Pakistan</p>
+                <p><i class="fas fa-envelope"></i> wwaliullah585@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="languages.html">Programming Languages</a>
+                <a href="classes.html">Online Classes</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="resume.html">Resume Builder</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61578725471951"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCBvmkQCJ4PxhuNpyh6xVwDQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Data Science Academy. All rights reserved. | CEO: Raza Wazir</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

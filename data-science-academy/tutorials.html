@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Data Science Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>Data Science Academy</span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="classes.html">Online Classes</a></li>
+                <li><a href="tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="resume.html">Resume Builder</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://wwaliullah585-art.github.io/learn-data-science-with-me/index.html#home">Webiste</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1 class="fade-in">Tutorials</h1>
+        <p class="fade-in">Browse and upload educational tutorials for the community</p>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section class="tutorials-section">
+        <!-- Upload Area -->
+        <div class="upload-area slide-up">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h3>Upload a Tutorial</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">Share your knowledge with the community</p>
+            
+            <div id="tutorialAlert" class="alert alert-success" style="display: none;"></div>
+            
+            <form id="tutorialForm" class="upload-form">
+                <div class="form-group">
+                    <label>Tutorial Title</label>
+                    <input type="text" id="tutTitle" placeholder="Enter tutorial title" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="tutDesc" placeholder="Describe what this tutorial covers..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="tutCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Database">Database</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Upload File (PDF, Video, or Document)</label>
+                    <input type="file" id="tutFile" accept=".pdf,.mp4,.doc,.docx,.ppt,.pptx,.txt,.zip">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-upload"></i> Upload Tutorial
+                </button>
+            </form>
+        </div>
+
+        <!-- Tutorials Grid -->
+        <h2 class="section-title" style="margin-top: 3rem;">Available Tutorials</h2>
+        <div class="tutorials-grid" id="tutorialsGrid">
+            <!-- Tutorials will be rendered here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-brain"></i> Data Science Academy</h3>
+                <p>Empowering students with cutting-edge technology education.</p>
+                <p><i class="fas fa-map-marker-alt"></i> KPK, Bannu, Pakistan</p>
+                <p><i class="fas fa-envelope"></i> wwaliullah585@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="languages.html">Programming Languages</a>
+                <a href="classes.html">Online Classes</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="resume.html">Resume Builder</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                   <a href="https://www.facebook.com/profile.php?id=61578725471951"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCBvmkQCJ4PxhuNpyh6xVwDQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Data Science Academy. All rights reserved. | CEO: Raza Wazir</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
